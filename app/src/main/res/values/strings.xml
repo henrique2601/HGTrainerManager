@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Provas</string>
+    <string name="title_notifications">Treinos</string>
+    <string name="title_profile">Pessoas</string>
+</resources>
