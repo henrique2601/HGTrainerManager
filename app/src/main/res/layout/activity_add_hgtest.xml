@@ -21,13 +21,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
+        android:id="@+id/typeGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameText">
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        android:checkedButton="@+id/distancia">
 
         <RadioButton
             android:id="@+id/distancia"
@@ -37,14 +39,14 @@
             android:text="Distancia" />
 
         <RadioButton
-            android:id="@+id/tempo"
+            android:id="@+id/radioTempo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Tempo" />
 
         <RadioButton
-            android:id="@+id/repeticoes"
+            android:id="@+id/radioRepeticoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -52,14 +54,13 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/confirmar"
+        android:id="@+id/confirmarAdd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:background="@color/primary"
-        android:onClick="confirm"
         android:text="Confirmar"
         app:layout_constraintBottom_toTopOf="@+id/cancel2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +74,6 @@
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:onClick="cancel"
         android:text="Cancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
